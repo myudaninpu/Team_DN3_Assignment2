@@ -1,0 +1,7 @@
+James prepared the training data for Option A, which focused on forecasting total daily sales across all stores. They wrote a SQL query to aggregate historical sales by date, calculating total sales, the number of active stores, and the average number of promotional items. To ensure reliable model testing, they excluded the last two weeks of data.
+
+Kyasha developed the time series model using BigQuery ML’s ARIMA_PLUS for Option A. They trained the model on the aggregated daily sales data, evaluated its performance using built-in metrics, and generated a 14-day forecast. Their work provided insight into overall sales trends and future expectations.
+
+Michael prepared the store-level dataset for Option B, which aimed to predict daily sales for individual stores. They joined sales data with store information to create a detailed table that included store type and cluster attributes. This enriched dataset enabled more precise modeling at the store level.
+
+Michael built and evaluated the regression model for Option B using BigQuery ML’s linear regression. They selected relevant features such as day of the week, store type, and cluster to train the model. After assessing its performance, they used it to generate predictions on test data, helping to identify store-specific sales patterns.
